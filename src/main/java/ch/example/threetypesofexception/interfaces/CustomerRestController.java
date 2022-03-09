@@ -16,7 +16,7 @@ public class CustomerRestController {
     private final FindCustomersByNameUseCase findCustomersByNameUseCase;
 
     @GetMapping("/customers")
-    public List<CustomerDto> findByName(@RequestParam String name) {
+    public List<CustomerDto> findByName(@RequestParam(required = false) String name) {
         return findCustomersByNameUseCase.invoke(new CustomerName(name)).stream()
                 .map(customer -> new CustomerDto(customer.getTitle().name(), customer.getCustomerName().value()))
                 .toList();
