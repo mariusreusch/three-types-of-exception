@@ -1,7 +1,7 @@
-package ch.example.threetypesofexception.interfaces;
+package ch.example.threetypesofexception.adapters.rest;
 
 import ch.example.threetypesofexception.application.FindCustomersByNameUseCase;
-import ch.example.threetypesofexception.domain.CustomerName;
+import ch.example.threetypesofexception.domain.entities.CustomerName;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;

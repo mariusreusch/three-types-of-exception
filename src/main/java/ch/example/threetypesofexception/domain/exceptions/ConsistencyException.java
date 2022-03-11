@@ -1,4 +1,4 @@
-package ch.example.threetypesofexception.common.exceptions;
+package ch.example.threetypesofexception.domain.exceptions;
 
 /**
  * A {@link ConsistencyException} should be thrown in case of programming errors or data inconsistencies. If you are not

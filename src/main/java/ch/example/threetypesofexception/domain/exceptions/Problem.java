@@ -1,4 +1,4 @@
-package ch.example.threetypesofexception.common.exceptions;
+package ch.example.threetypesofexception.domain.exceptions;
 
 public enum Problem {
 

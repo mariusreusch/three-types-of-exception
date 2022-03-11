@@ -1,9 +1,9 @@
-package ch.example.threetypesofexception.interfaces.restexceptionhandling;
+package ch.example.threetypesofexception.adapters.rest.exceptionhandling;
 
-import ch.example.threetypesofexception.common.exceptions.BusinessException;
-import ch.example.threetypesofexception.common.exceptions.ConsistencyException;
-import ch.example.threetypesofexception.common.exceptions.Problem;
-import ch.example.threetypesofexception.common.exceptions.SystemException;
+import ch.example.threetypesofexception.domain.exceptions.BusinessException;
+import ch.example.threetypesofexception.domain.exceptions.ConsistencyException;
+import ch.example.threetypesofexception.domain.exceptions.Problem;
+import ch.example.threetypesofexception.domain.exceptions.SystemException;
 import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
