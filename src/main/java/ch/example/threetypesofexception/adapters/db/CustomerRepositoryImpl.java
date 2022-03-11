@@ -1,12 +1,12 @@
-package ch.example.threetypesofexception.infrastructure;
+package ch.example.threetypesofexception.adapters.db;
 
-import ch.example.threetypesofexception.common.exceptions.ConsistencyException;
-import ch.example.threetypesofexception.common.exceptions.Problem;
-import ch.example.threetypesofexception.common.exceptions.SystemException;
-import ch.example.threetypesofexception.domain.Customer;
-import ch.example.threetypesofexception.domain.CustomerName;
-import ch.example.threetypesofexception.domain.CustomerRepository;
-import ch.example.threetypesofexception.domain.Title;
+import ch.example.threetypesofexception.domain.exceptions.ConsistencyException;
+import ch.example.threetypesofexception.domain.exceptions.Problem;
+import ch.example.threetypesofexception.domain.exceptions.SystemException;
+import ch.example.threetypesofexception.domain.entities.Customer;
+import ch.example.threetypesofexception.domain.entities.CustomerName;
+import ch.example.threetypesofexception.domain.repositories.CustomerRepository;
+import ch.example.threetypesofexception.domain.entities.Title;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

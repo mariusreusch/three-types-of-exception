@@ -1,4 +1,4 @@
-package ch.example.threetypesofexception.common.exceptions;
+package ch.example.threetypesofexception.domain.exceptions;
 
 /**
  * A {@link SystemException} should be thrown in case of any problem with a peripheral system

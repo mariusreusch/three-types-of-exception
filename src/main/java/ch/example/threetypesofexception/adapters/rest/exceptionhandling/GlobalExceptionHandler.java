@@ -1,18 +1,23 @@
-package ch.example.threetypesofexception.interfaces.restexceptionhandling;
+package ch.example.threetypesofexception.adapters.rest.exceptionhandling;
 
-import ch.example.threetypesofexception.common.exceptions.BusinessException;
-import ch.example.threetypesofexception.common.exceptions.ConsistencyException;
-import ch.example.threetypesofexception.common.exceptions.Problem;
-import ch.example.threetypesofexception.common.exceptions.SystemException;
+import ch.example.threetypesofexception.domain.exceptions.BusinessException;
+import ch.example.threetypesofexception.domain.exceptions.ConsistencyException;
+import ch.example.threetypesofexception.domain.exceptions.Problem;
+import ch.example.threetypesofexception.domain.exceptions.SystemException;
+import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
 
 @RestControllerAdvice
-public class GlobalExceptionHandler {
+@RestController
+public class GlobalExceptionHandler implements ErrorController {
+
+    @RequestMapping("/unknown")
+    public ErrorResponseDto handleError() {
+        return mapToErrorResponse(Problem.UNKNOWN_USECASE);
+    }
 
     @ExceptionHandler(BusinessException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)

@@ -1,4 +1,4 @@
-package ch.example.threetypesofexception.domain;
+package ch.example.threetypesofexception.domain.entities;
 
 import java.util.Arrays;
 import java.util.Optional;

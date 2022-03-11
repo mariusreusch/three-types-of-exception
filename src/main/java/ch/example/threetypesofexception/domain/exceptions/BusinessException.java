@@ -1,4 +1,4 @@
-package ch.example.threetypesofexception.common.exceptions;
+package ch.example.threetypesofexception.domain.exceptions;
 
 /**
  * A {@link BusinessException} should be thrown in case of a violated business rule. If you are not sure if this is the
