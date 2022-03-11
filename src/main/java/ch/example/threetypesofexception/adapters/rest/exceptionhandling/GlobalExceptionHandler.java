@@ -37,11 +37,11 @@ public class GlobalExceptionHandler implements ErrorController {
         return mapToErrorResponse(systemException.getProblem());
     }
 
-    private ErrorResponseDto mapToErrorResponse(Problem systemException) {
+    private ErrorResponseDto mapToErrorResponse(Problem problem) {
         return new ErrorResponseDto(
                 LocalDateTime.now(),
-                systemException.code,
-                systemException.message,
+                problem.code,
+                problem.message,
                 "put-correlation-id-here"
         );
     }
