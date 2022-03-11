@@ -1,4 +1,4 @@
-package ch.example.threetypesofexception.domain;
+package ch.example.threetypesofexception.domain.entities;
 
 public class Customer {
 

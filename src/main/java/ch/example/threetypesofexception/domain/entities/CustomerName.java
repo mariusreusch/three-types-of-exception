@@ -1,7 +1,7 @@
-package ch.example.threetypesofexception.domain;
+package ch.example.threetypesofexception.domain.entities;
 
-import ch.example.threetypesofexception.common.exceptions.BusinessException;
-import ch.example.threetypesofexception.common.exceptions.Problem;
+import ch.example.threetypesofexception.domain.exceptions.BusinessException;
+import ch.example.threetypesofexception.domain.exceptions.Problem;
 
 public record CustomerName(String value) {
 

@@ -1,8 +1,8 @@
 package ch.example.threetypesofexception.application;
 
-import ch.example.threetypesofexception.domain.Customer;
-import ch.example.threetypesofexception.domain.CustomerName;
-import ch.example.threetypesofexception.domain.CustomerRepository;
+import ch.example.threetypesofexception.domain.entities.Customer;
+import ch.example.threetypesofexception.domain.entities.CustomerName;
+import ch.example.threetypesofexception.domain.repositories.CustomerRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
