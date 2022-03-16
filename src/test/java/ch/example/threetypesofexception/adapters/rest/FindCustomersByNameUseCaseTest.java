@@ -17,7 +17,9 @@ class FindCustomersByNameUseCaseTest {
 
     @Test
     public void getCustomerByName_mUster_returns2Elements() {
-        ResponseEntity<CustomerDto[]> response = template.getForEntity("/customers?name=mUster", CustomerDto[].class);
+        String validCustomerNameWithUpperCaseLetter = "mUster"
+        
+        ResponseEntity<CustomerDto[]> response = template.getForEntity("/customers?name=" + validCustomerNameWithUpperCaseLetter, CustomerDto[].class);
 
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
 
