@@ -1,4 +1,4 @@
-package ch.example.threetypesofexception.interfaces.restexceptionhandling;
+package ch.example.threetypesofexception.adapters.rest.exceptionhandling;
 
 import java.time.LocalDateTime;
 
